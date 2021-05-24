@@ -1,0 +1,43 @@
+@import "_mix";
+
+.profile {
+  flex-grow: 1;
+  width: 100%;
+
+  .contaner {
+    margin-top: 15vh;
+    width: 100%;
+    @include flexCenter();
+    justify-content: space-around;
+  }
+
+  .details {
+    @include flexCenter(column);
+    width: 40%;
+  }
+  .identy {
+    @include flexCenter(column);
+  }
+  .profileImg {
+    @include flexCenter();
+    height: 155px;
+    width: 155px;
+    margin: 19px;
+    background-color: var(--secBg);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 36px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .profileName {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}

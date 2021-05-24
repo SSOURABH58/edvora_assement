@@ -1,0 +1,61 @@
+@import "_mix";
+
+.navBar {
+  background-color: var(--primeNav);
+  height: 100vh;
+  width: 84px;
+  @include flexCenter(column);
+  padding: 20px 0;
+
+  .logo {
+    cursor: pointer;
+  }
+  .line {
+    border-top: 1px solid #5c5355;
+    width: 50%;
+    margin: 30px 0;
+  }
+  .shops {
+    flex-grow: 1;
+    width: 100%;
+    @include flexCenter(column);
+    justify-content: flex-start;
+  }
+  .shop {
+    border-radius: 10px;
+    width: 43px;
+    height: 43px;
+    @include flexCenter();
+    margin-bottom: 26px;
+
+    //text
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    text-align: center;
+  }
+  .activeShop {
+    background: var(--secBg);
+  }
+  .profile {
+    border-radius: 15px;
+    background-color: var(--secBg);
+  }
+  .profileT {
+    width: 41px;
+    height: 41px;
+    background-color: var(--secBg);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 24px;
+    border-radius: 25%;
+    @include flexCenter();
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}

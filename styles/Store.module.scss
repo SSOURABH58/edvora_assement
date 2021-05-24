@@ -1,0 +1,61 @@
+@import "_mix";
+
+.store {
+  @include flexCenter();
+  justify-content: flex-start;
+  // height: 100vh;
+  flex-grow: 1;
+  width: 100%;
+  margin-top: 5vh;
+  max-height: 90vh;
+  // overflow-y: scroll;
+
+  .left {
+    @include flexCenter(column);
+    justify-content: flex-start;
+    height: 100%;
+    padding: 0 20px;
+    width: 260px;
+  }
+  .right {
+    @include flexCenter(column);
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    margin-right: 30px;
+    width: 60%;
+    // height: 100vh;
+    // overflow-y: hidden;
+    .title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 35px;
+      line-height: 42px;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin-bottom: 21px;
+      margin-left: 14px;
+    }
+    .productlable {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 30px;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      opacity: 50%;
+      margin-left: 14px;
+    }
+    .products {
+      @include flexCenter(column);
+      flex-grow: 1;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 100%;
+      // margin-right: 30px;
+      // height: 20vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+  }
+}

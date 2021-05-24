@@ -1,0 +1,49 @@
+@import "_mix";
+
+.login {
+  @include flexCenter(column);
+  // height: 100vh;
+  flex-grow: 1;
+
+  background-color: var(--primeBg);
+  color: var(--primeFg);
+  .main {
+    flex-grow: 1;
+    @include flexCenter();
+    width: 40%;
+    .loginTab {
+      @include flexCenter(column);
+      width: 100%;
+      max-width: 302px;
+      min-width: 290px;
+      .title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        margin-bottom: 69px;
+        margin-top: 0;
+      }
+      .button {
+        background: #8d5252;
+        color: #fff;
+        border-radius: 5px;
+        height: 2rem;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        border: hidden;
+        margin-top: 39px;
+        width: 100%;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        &:active {
+          background-color: #b98383;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "_mix";
+
+.footer {
+  // margin-top: auto;
+  width: 90%;
+  height: 5vh;
+  @include flexCenter();
+  justify-content: space-around;
+  .line {
+    border: 0.5px solid #7a7a7a;
+    width: 40%;
+    height: 0;
+  }
+  .footerText {
+    width: 15%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .line {
+    display: none;
+  }
+  .footerText {
+    width: 60% !important;
+  }
+}

@@ -1,0 +1,43 @@
+@import "_mix";
+
+.about {
+  background-color: var(--primeFilter);
+  border-radius: 15px;
+  @include flexCenter(column);
+  padding: 25px;
+  width: 228px;
+  margin: 20px;
+
+  .title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    /* identical to box height */
+    width: 90%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .details {
+    @include flexCenter();
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      height: 3rem;
+      overflow: hidden;
+    }
+    .logo {
+      border-radius: 15px;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}
