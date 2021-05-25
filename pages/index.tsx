@@ -1,10 +1,10 @@
-import Head from "next/head";
-import Image from "next/image";
+// import Head from "next/head";
+// import Image from "next/image";
 import styles from "../styles/Home.module.scss";
-import React, { useEffect } from "react";
-import { useRouter } from "next/dist/client/router";
-import { useContext } from "react";
-import { AuthCxt, AppContextInterface } from "../store/authCxt";
+import React from "react";
+// import { useRouter } from "next/dist/client/router";
+// import { useContext } from "react";
+// import { AuthCxt, AppContextInterface } from "../store/authCxt";
 
 // import { GetServerSideProps } from "next";
 // import { useContext } from "react";

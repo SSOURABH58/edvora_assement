@@ -3,11 +3,47 @@ import styles from "../styles/Filter.module.scss";
 import Image from "next/image";
 import { useContext } from "react";
 import { AuthCxt, AppContextInterface } from "../store/authCxt";
-import { useRouter } from "next/dist/client/router";
+// import { useRouter } from "next/dist/client/router";
 
 export default function Filter({ filterOpctions }: any) {
   // console.log(filterOpctions);
-  const [filters, setfilters] = useState([
+  // const [filters, setfilters] = useState([
+  //   {
+  //     lable: "Products",
+  //     opctions: [],
+  //   },
+  //   {
+  //     lable: "Location",
+  //     opctions: [],
+  //   },
+  //   {
+  //     lable: "City",
+  //     opctions: [],
+  //   },
+  // ]);
+  // const [sorters, setsorters] = useState([
+  //   {
+  //     lable: "Date",
+  //     opctions: ["Ascending", "Descending"],
+  //   },
+  //   {
+  //     lable: "Time",
+  //     opctions: ["Ascending", "Descending"],
+  //   },
+  // ]);
+
+  const sorters = [
+    {
+      lable: "Date",
+      opctions: ["Ascending", "Descending"],
+    },
+    {
+      lable: "Time",
+      opctions: ["Ascending", "Descending"],
+    },
+  ];
+
+  const filters = [
     {
       lable: "Products",
       opctions: [],
@@ -20,17 +56,7 @@ export default function Filter({ filterOpctions }: any) {
       lable: "City",
       opctions: [],
     },
-  ]);
-  const [sorters, setsorters] = useState([
-    {
-      lable: "Date",
-      opctions: ["Ascending", "Descending"],
-    },
-    {
-      lable: "Time",
-      opctions: ["Ascending", "Descending"],
-    },
-  ]);
+  ];
 
   return (
     <div className={styles.filter}>
@@ -81,7 +107,7 @@ export function FilterBox(props: FilterBox) {
           <p
             key={i}
             className={styles.element}
-            onClick={(e) => addfilter({ [props.lable]: ele })}
+            onClick={() => addfilter({ [props.lable]: ele })}
           >
             {ele}
           </p>

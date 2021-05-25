@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer } from "../components/footer";
+// import { Footer } from "../components/footer";
 import LoginTab from "../components/loginTab";
 import styles from "../styles/Login.module.scss";
 

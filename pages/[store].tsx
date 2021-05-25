@@ -20,7 +20,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   let Products = new Set([""]);
   let Location = new Set([""]);
   let City = new Set([""]);
-  data.forEach((ele: any, i: number) => {
+  data.forEach((ele: any) => {
     // console.log(i, "::", ele);
     Products.add(ele[0].category);
     ele.forEach((product: any) => {

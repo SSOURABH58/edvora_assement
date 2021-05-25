@@ -1,7 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import { AuthCxt, AppContextInterface } from "../store/authCxt";
-import Image from "next/image";
+// import Image from "next/image";
 import styles from "../styles/AboutCompany.module.scss";
 
 export default function AboutCompany() {

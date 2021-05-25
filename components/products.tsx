@@ -16,15 +16,11 @@ export default function Products(props: any) {
 
     temp =
       filters.Location !== "All"
-        ? temp.filter(
-            (ele: any, i: number) => filters.Location === ele.location.state
-          )
+        ? temp.filter((ele: any) => filters.Location === ele.location.state)
         : temp;
     temp =
       filters.City !== "All"
-        ? temp.filter(
-            (ele: any, i: number) => filters.City === ele.location.city
-          )
+        ? temp.filter((ele: any) => filters.City === ele.location.city)
         : temp;
 
     filters.Date === "Ascending"
