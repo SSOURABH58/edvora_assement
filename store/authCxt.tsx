@@ -58,7 +58,7 @@ export const AuthCxtProvider = ({ children }: any) => {
         company: data.company,
         shops: data.shop,
       });
-      rout.push("/");
+      rout.push(`/${data.shop[0].shop_name}`);
     }
   };
 
