@@ -9,4 +9,5 @@ module.exports = {
   images: {
     domains: ["mintformations.co.uk"],
   },
+  target: serverless,
 };
